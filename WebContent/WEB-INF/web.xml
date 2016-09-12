@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MyCourses</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UserController</display-name>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>com.jin.controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegistrationController</display-name>
+    <servlet-name>RegistrationController</servlet-name>
+    <servlet-class>com.jin.controller.RegistrationController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationController</servlet-name>
+    <url-pattern>/RegistrationController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CourseController</display-name>
+    <servlet-name>CourseController</servlet-name>
+    <servlet-class>com.jin.controller.CourseController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseController</servlet-name>
+    <url-pattern>/CourseController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>ScheduleController</display-name>
+    <servlet-name>ScheduleController</servlet-name>
+    <servlet-class>com.jin.controller.ScheduleController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ScheduleController</servlet-name>
+    <url-pattern>/ScheduleController</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>DepartmentController</display-name>
+    <servlet-name>DepartmentController</servlet-name>
+    <servlet-class>com.jin.controller.DepartmentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepartmentController</servlet-name>
+    <url-pattern>/DepartmentController</url-pattern>
+</servlet-mapping>
+ 
+<servlet>
+    <description></description>
+    <display-name>ProgramController</display-name>
+    <servlet-name>ProgramController</servlet-name>
+    <servlet-class>com.jin.controller.ProgramController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProgramController</servlet-name>
+    <url-pattern>/ProgramController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <description></description>
+    <display-name>AccountController</display-name>
+    <servlet-name>AccountController</servlet-name>
+    <servlet-class>com.jin.controller.AccountController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountController</servlet-name>
+    <url-pattern>/AccountController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <description></description>
+    <display-name>GradeController</display-name>
+    <servlet-name>GradeController</servlet-name>
+    <servlet-class>com.jin.controller.GradeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GradeController</servlet-name>
+    <url-pattern>/GradeController</url-pattern>
+</servlet-mapping>
+
+<jsp-config>   
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/fmt</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/fmt.tld</taglib-location>
+</taglib>
+
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/fmt-rt</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/fmt-rt.tld</taglib-location>
+</taglib>
+
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/c.tld</taglib-location>
+</taglib>
+
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/core-rt</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/c-rt.tld</taglib-location>
+</taglib>
+
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/sql</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/sql.tld</taglib-location>
+</taglib>
+
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/sql-rt</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/sql-rt.tld</taglib-location>
+</taglib>
+
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/x</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/x.tld</taglib-location>
+</taglib>
+
+<taglib>
+    <taglib-uri>http://java.sun.com/jstl/x-rt</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/x-rt.tld</taglib-location>
+</taglib>
+</jsp-config>  
+
+</web-app>
